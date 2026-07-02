@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Susilkessav Seshadri Bhuvaneswari">
+  <rect width="1200" height="630" fill="#0d1117"/>
+  <circle cx="1080" cy="120" r="260" fill="#58a6ff" opacity="0.10"/>
+  <circle cx="1180" cy="-40" r="150" fill="#58a6ff" opacity="0.14"/>
+  <rect x="0" y="0" width="10" height="630" fill="#58a6ff"/>
+  <text x="90" y="150" font-family="'JetBrains Mono', monospace" font-size="28" letter-spacing="4" fill="#58a6ff">DATA &amp; AI ENGINEER</text>
+  <text x="90" y="290" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="700" fill="#e6edf3" letter-spacing="-2">Susilkessav</text>
+  <text x="90" y="380" font-family="Inter, system-ui, sans-serif" font-size="86" font-weight="700" fill="#e6edf3" letter-spacing="-2">Seshadri Bhuvaneswari</text>
+  <text x="90" y="470" font-family="Inter, system-ui, sans-serif" font-size="34" fill="#8b949e">Data platforms · RAG systems · AI agents</text>
+  <text x="90" y="560" font-family="'JetBrains Mono', monospace" font-size="26" fill="#8b949e">github.com/Susilkessav   ·   MS @ Northeastern</text>
+</svg>

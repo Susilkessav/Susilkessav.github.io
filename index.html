@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Susilkessav Seshadri Bhuvaneswari — Data & AI Engineer</title>
+  <meta name="description" content="Susilkessav Seshadri Bhuvaneswari — Data & AI Engineer. Production data platforms (50M+ daily records, 99.9% SLA), RAG systems, and AI agents. MS in Data Analytics Engineering @ Northeastern." />
+  <meta name="author" content="Susilkessav Seshadri Bhuvaneswari" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Susilkessav Seshadri Bhuvaneswari — Data & AI Engineer" />
+  <meta property="og:description" content="Production data platforms, RAG systems, and AI agents. MS in Data Analytics Engineering @ Northeastern." />
+  <meta property="og:image" content="assets/img/og-image.svg" />
+  <meta property="og:url" content="https://susilkessav.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Set theme before paint to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = saved || (prefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Home">
+        <span class="nav__logo">S</span>
+        <span class="nav__name">Susilkessav</span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a class="btn btn--solid nav__resume" href="assets/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        <button class="icon-btn nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow">Data &amp; AI Engineer</p>
+          <h1 class="hero__title">Susilkessav<br />Seshadri Bhuvaneswari</h1>
+          <p class="hero__lead">
+            I build production data platforms, RAG systems, and AI agents —
+            from <strong>50M+ daily-record</strong> pipelines at <strong>99.9% SLA</strong>
+            to local-first LLM agents and real-time streaming apps.
+          </p>
+          <p class="hero__meta">
+            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Boston, MA</span>
+            <span class="dot">·</span>
+            <span>MS in Data Analytics Engineering @ Northeastern</span>
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--solid" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+            <a class="btn btn--ghost" href="mailto:seshadribhuvaneswa.s@northeastern.edu">Email me</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/Susilkessav" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.92 1.24 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/susilkessav" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:seshadribhuvaneswa.s@northeastern.edu" aria-label="Email">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__aside reveal">
+          <div class="hero__avatar">
+            <img src="assets/img/headshot.jpg" alt="Portrait of Susilkessav Seshadri Bhuvaneswari" width="280" height="280" />
+          </div>
+          <ul class="hero__stats">
+            <li><strong>50M+</strong><span>daily records</span></li>
+            <li><strong>15+</strong><span>data pipelines</span></li>
+            <li><strong>6</strong><span>shipped projects</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01</span> About</h2>
+        <div class="about">
+          <p>
+            I'm a data and AI engineer finishing an MS in Data Analytics Engineering at Northeastern.
+            I've built production data platforms — 15+ pipelines moving 50M+ daily records at 99.9% SLA at
+            <strong>Getinge</strong> — NLP and security-analytics services at <strong>CISAI</strong>, and ML
+            model-serving pipelines on AWS at <strong>EasyCrop</strong>.
+          </p>
+          <p>
+            Lately I focus on retrieval-augmented and agentic AI: local-first LLM agents, RAG systems with
+            observability and groundedness guardrails, and real-time streaming applications. I care about
+            shipping things that are correct, observable, and tested.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02</span> Skills</h2>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>Python</li><li>SQL</li><li>JavaScript</li><li>TypeScript</li><li>Node.js</li><li>Java</li><li>R</li><li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data Engineering</h3>
+            <ul class="chips">
+              <li>Spark</li><li>PySpark</li><li>Spark SQL</li><li>Airflow</li><li>dbt</li><li>ETL / ELT</li><li>Delta Lake</li><li>Parquet</li><li>medallion architecture</li><li>data contracts</li><li>Great Expectations</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; Platforms</h3>
+            <ul class="chips">
+              <li>AWS</li><li>S3</li><li>Lambda</li><li>SageMaker</li><li>Azure Synapse</li><li>Databricks</li><li>Microsoft Fabric</li><li>GCP</li><li>GKE</li><li>Vercel</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Databases</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>SQLite</li><li>ChromaDB</li><li>SAP HANA</li><li>SQL Server</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>ML &amp; Analytics</h3>
+            <ul class="chips">
+              <li>TensorFlow</li><li>PyTorch</li><li>CNNs</li><li>XGBoost</li><li>MLflow</li><li>ONNX</li><li>NLP</li><li>computer vision</li><li>anomaly detection</li><li>feature engineering</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>GenAI &amp; Agents</h3>
+            <ul class="chips">
+              <li>LangChain</li><li>RAG</li><li>LLM agents</li><li>OpenAI API</li><li>GPT-4o</li><li>Anthropic API</li><li>Ollama</li><li>Hugging Face</li><li>embeddings</li><li>vector search</li><li>Langfuse</li><li>RAGAS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend &amp; APIs</h3>
+            <ul class="chips">
+              <li>FastAPI</li><li>Flask</li><li>Express.js</li><li>REST APIs</li><li>GraphQL</li><li>WebSockets</li><li>gRPC</li><li>JWT</li><li>RBAC</li><li>OAuth</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend &amp; BI</h3>
+            <ul class="chips">
+              <li>React</li><li>Next.js</li><li>HTML</li><li>CSS</li><li>Streamlit</li><li>Power BI</li><li>Tableau</li><li>D3</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps &amp; Testing</h3>
+            <ul class="chips">
+              <li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li><li>CI/CD</li><li>Terraform</li><li>pytest</li><li>monitoring / alerting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03</span> Experience</h2>
+        <div class="timeline">
+
+          <article class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Data Engineer Intern <span class="tl-company">· Getinge</span></h3>
+                <span class="tl-date">Jul 2024 – Sep 2025</span>
+              </div>
+              <p class="tl-loc">Wayne, United States</p>
+              <ul class="tl-bullets">
+                <li>Designed 15+ Python data pipelines on Azure Synapse and Databricks, ingesting 50M+ daily records from REST APIs at 99.9% SLA.</li>
+                <li>Architected a medallion Bronze–Silver–Gold pipeline with data contracts and schema-validated Parquet, stopping schema drift across 100+ ML tables.</li>
+                <li>Integrated Microsoft Fabric and Databricks Metastore for governance, enabling cross-workspace data lineage across 100+ tables.</li>
+                <li>Deployed Great Expectations schema-drift detection across 100+ tables, cutting data triage 20% and enforcing compliance before model retraining.</li>
+                <li>Reduced service failure rates 40% across 12 production workflows via idempotent retries, contract checks, and automated alerting.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Software Developer Intern <span class="tl-company">· CISAI</span></h3>
+                <span class="tl-date">Aug 2022 – Feb 2023</span>
+              </div>
+              <p class="tl-loc">Amritapuri, India</p>
+              <ul class="tl-bullets">
+                <li>Fine-tuned LLM embedding models using LoRA and PEFT on domain data, boosting NLP classification accuracy 10%.</li>
+                <li>Modeled anomaly detection over streaming security logs, improving early outlier identification 25% and cutting false-positive SIEM alerts.</li>
+                <li>Built an automated Python service streaming 10,000+ posts daily into Airflow ELT, powering NLP classification and SIEM enrichment.</li>
+                <li>Engineered log-parsing and scoring services turning raw telemetry into structured event records, cutting incident triage time 30%.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-dot" aria-hidden="true"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>AI Engineer Intern <span class="tl-company">· EasyCrop Tech</span></h3>
+                <span class="tl-date">Dec 2021 – Jun 2022</span>
+              </div>
+              <p class="tl-loc">Hyderabad, India</p>
+              <ul class="tl-bullets">
+                <li>Configured GitHub Actions CI/CD with Docker and pytest, achieving 88% test coverage across unit, integration, and e2e tests.</li>
+                <li>Automated model releases via S3 event triggers, Lambda, and SageMaker pipelines, saving 8+ engineering hours per deployment cycle.</li>
+                <li>Built an AWS SageMaker serving pipeline processing 1,000+ images daily at sub-150ms P95 latency via Dockerized REST endpoints.</li>
+                <li>Trained TensorFlow CNNs across 10,000+ labeled images with augmentation pipelines versioned in Docker, reaching 95% precision.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04</span> Projects</h2>
+        <div class="projects">
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/Valorant_CLI" target="_blank" rel="noopener" aria-label="Valorant_CLI on GitHub">
+              <img src="assets/img/project-valorant-cli.svg" alt="Valorant_CLI cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">Valorant_CLI</h3>
+              <p class="card__sub">Local-first AI coaching agent</p>
+              <p class="card__desc">A local Ollama LLM grounded in a RAG knowledge base (342 docs across 22 agents, 14 maps, 8 meta entries), with a 9-class intent router, a 10-analyzer post-game evaluation harness, and a deterministic fact-checker that blocks fabricated ability claims.</p>
+              <ul class="chips chips--mono">
+                <li>Python</li><li>Ollama</li><li>ChromaDB</li><li>SQLite</li><li>RAG</li><li>pytest</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/Valorant_CLI" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/AI-Sports-Commentary-Engine" target="_blank" rel="noopener" aria-label="AI Sports Commentary Engine on GitHub">
+              <img src="assets/img/project-ai-sports-commentary.svg" alt="AI Sports Commentary Engine cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">AI Sports Commentary Engine</h3>
+              <p class="card__sub">Real-time LLM commentary</p>
+              <p class="card__desc">A 4-service microarchitecture (ingestion producer, streaming enricher, LLM commentator, FastAPI dashboard) wired through Kafka/Redpanda, computing live win-probability and per-play hype scores to set commentary tone.</p>
+              <ul class="chips chips--mono">
+                <li>Python</li><li>Kafka</li><li>Redpanda</li><li>FastAPI</li><li>WebSockets</li><li>Docker</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/AI-Sports-Commentary-Engine" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/Atlas" target="_blank" rel="noopener" aria-label="Atlas on GitHub">
+              <img src="assets/img/project-atlas.svg" alt="Atlas cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">Atlas</h3>
+              <p class="card__sub">Full-stack task &amp; workflow platform</p>
+              <p class="card__desc">A SaaS platform with FastAPI + React: 20+ REST endpoints with JWT auth and RBAC isolation, PostgreSQL + Redis caching (35% lower latency), Dockerized with GitHub Actions CI/CD and 88% test coverage.</p>
+              <ul class="chips chips--mono">
+                <li>FastAPI</li><li>React</li><li>PostgreSQL</li><li>Redis</li><li>JWT</li><li>Docker</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/Atlas" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/amazon-automotive-mlops" target="_blank" rel="noopener" aria-label="Amazon Automotive MLOps on GitHub">
+              <img src="assets/img/project-amazon-automotive-mlops.svg" alt="Amazon Automotive MLOps cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">Amazon Automotive MLOps</h3>
+              <p class="card__sub">RAG pipeline with observability</p>
+              <p class="card__desc">An end-to-end MLOps RAG pipeline over Amazon automotive reviews: Airflow ingestion, ChromaDB vector retrieval, a Flask serving layer, OpenAI moderation guardrails, and Langfuse observability on every call, with a GKE deployment blueprint.</p>
+              <ul class="chips chips--mono">
+                <li>LangChain</li><li>ChromaDB</li><li>Airflow</li><li>Langfuse</li><li>Flask</li><li>GCP</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/amazon-automotive-mlops" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/Voice-Scheduling-Agent" target="_blank" rel="noopener" aria-label="Voice Scheduling Agent on GitHub">
+              <img src="assets/img/project-voice-scheduling-agent.svg" alt="Voice Scheduling Agent cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">Voice Scheduling Agent <span class="badge">Live on Vercel</span></h3>
+              <p class="card__sub">Conversational calendar agent</p>
+              <p class="card__desc">A real-time voice agent (Vapi + GPT-4o) that books real Google Calendar events through natural conversation, with live transcript display and a volume-reactive voice orb. OAuth calendar integration handled end-to-end.</p>
+              <ul class="chips chips--mono">
+                <li>TypeScript</li><li>Next.js</li><li>Vapi</li><li>GPT-4o</li><li>OAuth</li><li>Vercel</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/Voice-Scheduling-Agent" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a class="card__media" href="https://github.com/Susilkessav/msd-continuous-manufacturing" target="_blank" rel="noopener" aria-label="MSD Continuous Manufacturing on GitHub">
+              <img src="assets/img/project-msd-continuous-manufacturing.svg" alt="MSD Continuous Manufacturing cover" loading="lazy" />
+            </a>
+            <div class="card__body">
+              <h3 class="card__title">MSD Continuous Manufacturing</h3>
+              <p class="card__sub">Pharma process analytics</p>
+              <p class="card__desc">End-to-end analytics for continuous pharma manufacturing: resamples multi-sensor feeder, blender, and tablet-press streams into a unified 1 Hz table, fits RTD FIR kernels across 3 stages, and forecasts tablet content-uniformity with lag-search + linear baselines.</p>
+              <ul class="chips chips--mono">
+                <li>Python</li><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>Parquet</li><li>matplotlib</li>
+              </ul>
+              <div class="card__links">
+                <a href="https://github.com/Susilkessav/msd-continuous-manufacturing" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05</span> Publications</h2>
+        <div class="pub reveal">
+          <div class="pub__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <h3>Peer-to-Peer Energy Trading Using Blockchain in Microgrid</h3>
+            <p class="pub__meta">IEEE · 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">06</span> Education</h2>
+        <div class="edu">
+          <article class="edu__item reveal">
+            <div class="edu__head">
+              <h3>Northeastern University</h3>
+              <span class="tl-date">Sep 2023 – Dec 2025</span>
+            </div>
+            <p>M.S. in Data Analytics Engineering</p>
+            <p class="edu__loc">Boston, Massachusetts</p>
+          </article>
+          <article class="edu__item reveal">
+            <div class="edu__head">
+              <h3>Amrita Vishwa Vidyapeetham</h3>
+              <span class="tl-date">Aug 2019 – May 2023</span>
+            </div>
+            <p>B.Tech in Electrical &amp; Computer Engineering</p>
+            <p class="edu__loc">Kerala, India</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner reveal">
+        <h2 class="contact__title">Let's build something.</h2>
+        <p class="contact__lead">Open to data, AI/ML, and software engineering roles. The fastest way to reach me is email.</p>
+        <div class="contact__links">
+          <a class="btn btn--solid" href="mailto:seshadribhuvaneswa.s@northeastern.edu">seshadribhuvaneswa.s@northeastern.edu</a>
+          <a class="btn btn--ghost" href="mailto:susilkessavsb@gmail.com">susilkessavsb@gmail.com</a>
+        </div>
+        <div class="contact__row">
+          <a href="tel:+16173961430">+1 (617) 396-1430</a>
+          <span class="dot">·</span>
+          <a href="https://linkedin.com/in/susilkessav" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="dot">·</span>
+          <a href="https://github.com/Susilkessav" target="_blank" rel="noopener">GitHub</a>
+          <span class="dot">·</span>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Susilkessav Seshadri Bhuvaneswari</span>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

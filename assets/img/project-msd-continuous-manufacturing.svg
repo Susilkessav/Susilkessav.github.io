@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="MSD Continuous Manufacturing">
+  <rect width="800" height="450" fill="#0d1117"/>
+  <circle cx="720" cy="60" r="150" fill="#2dd4bf" opacity="0.12"/>
+  <circle cx="830" cy="-10" r="90" fill="#2dd4bf" opacity="0.16"/>
+  <rect x="0" y="0" width="6" height="450" fill="#2dd4bf"/>
+  <text x="56" y="72" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="500" letter-spacing="3" fill="#2dd4bf">06 / PROCESS</text>
+  <text x="56" y="196" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#e6edf3" letter-spacing="-1">MSD Continuous</text>
+  <text x="56" y="254" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="700" fill="#e6edf3" letter-spacing="-1">Manufacturing</text>
+  <text x="56" y="330" font-family="Inter, system-ui, sans-serif" font-size="24" fill="#8b949e">Pharma process analytics</text>
+  <line x1="56" y1="360" x2="744" y2="360" stroke="#2b3340" stroke-width="1"/>
+  <text x="56" y="400" font-family="'JetBrains Mono', monospace" font-size="19" fill="#2dd4bf">pandas · scikit-learn · RTD</text>
+</svg>
